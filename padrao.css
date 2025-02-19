@@ -8,7 +8,7 @@
 
 header {
     height: 100px;
-    background-color: aqua;
+    background-color: #8D98A7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@ header h1 {
 }
 
 main {
-    background-color: antiquewhite;
+    background-color: #646E78;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -35,9 +35,7 @@ main {
     border-radius: 10PX;
     border: none;
     background-size: cover;
-    /* Ajusta o tamanho da imagem para cobrir todo o botão */
     background-position: center;
-    /* Centraliza a imagem */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,19 +45,92 @@ main {
 .card h2 {
     font-size: 50px;
 }
-.card:hover div{
- transform: ;
+
+.card:hover .text {
+    animation: cardexp .5s forwards;
 }
-.text{
-    background-color: rgba(250, 235, 215, 0.774);
+.card:not(:hover) .text{
+    animation: cardexpinv .5s ease-out;
+}
+.text {
+    background-color: #a7764d91;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     transition: ease-in-out 1s;
+    width: 100px;
+    height: 20px;
 }
+
 footer {
     height: 30px;
-    background-color: aquamarine;
+    background-color: #8D98A7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+@keyframes cardexp {
+    0% {
+        width: 100px;
+        height: 20px;
+    }
+
+    100% {
+        height: calc(100% - 20px);
+        width: 100%;
+        background-color: #DCCCBB;
+    }
+}
+@keyframes cardexpinv {
+    0% {
+        height: calc(100% - 20px);
+        width: 100%;
+        background-color: #DCCCBB;
+    }
+    100% {
+        width: 100px;
+        height: 20px;
+    }
+}
+
+body{
+    max-width: 100dvw;
+}
+.tipe1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    font-size: 20px;
+    font-family: arial;
+    text-align: justify;
+}
+.tipe1 img{
+    min-height: 300px;
+    min-width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tipe2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: arial;
+    text-align: justify;
+}
+.tipe3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
 }
