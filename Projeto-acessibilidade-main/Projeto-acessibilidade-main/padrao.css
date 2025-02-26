@@ -83,7 +83,7 @@ body {max-width: 100dvw;overflow-x: hidden;
 }
 
 /* tem apenas um texto grande */
-.tipe2 {display: flex;align-items: start;padding: 10px;font-size: 20px;font-family: arial;text-align: justify;flex-direction: column;gap: 10px;
+.tipe2 {display: flex;align-items: start;padding: 10px;font-size: 20px;font-family: arial;text-align: justify;flex-direction: column;gap: 10px;width: 100%;
 }
 
 /* tem apenas uma imagem grande */
