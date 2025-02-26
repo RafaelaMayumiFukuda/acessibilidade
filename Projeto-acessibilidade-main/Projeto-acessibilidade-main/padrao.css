@@ -1,0 +1,95 @@
+/* Reset simples de css */
+* {padding: 0px;margin: 0px;font-size: 20px;font-family: arial;color: black;list-style: none;text-decoration: none;border: none;
+}/* Reset simples de css */
+
+h1,h2 {text-transform: capitalize;
+}
+header {height: 60px;background-color: #8d98a7;display: flex;align-items: center;padding: 20px;gap: px;justify-content: space-between;flex-wrap: wrap;
+}
+.marca {display: flex;align-items: center;flex-wrap: wrap;
+}
+.marca img {height: 40px;width: 40px;
+}
+header button {text-transform: capitalize;padding: 5px;height: 40px;width: 100px;font-size: 15px;background-color: transparent;color: black;
+}
+.home:hover,.active:hover{background-color: white;transition: ease-in-out 0.2s;
+}
+.drop-down {position: absolute;display: none;
+}
+.drop-down button {width: 100px;background-color: white;transition: ease-in-out .1s;
+}
+.active:focus{background-color: white;
+}
+.active:focus ~ .drop-down {display: flex; flex-direction: column;
+}
+.drop-down button:hover{background-color: rgb(172, 172, 172);color: white;
+}
+.sep {background-color: black;width: 1px;
+}
+nav {display: flex;gap: 5px;
+}
+header h1 {font-size: 30px;
+}
+main {background-color: #646e78;display: flex;flex-wrap: wrap;gap: 10px;align-items: center;justify-content: center;padding: 10px;min-height: calc(100vh - 150px);
+}
+.card {min-height: 300px;width: 300px;border-radius: 10px;border: none;background-size: cover;background-position: center;display: flex;align-items: center;justify-content: center;user-select: none;
+}
+.card:hover .text {animation: cardexp 0.5s forwards;
+}
+.card:not(:hover) .text {animation: cardexpinv 0.5s ease-out;
+}
+.text {background-color: #a7764d91;padding: 10px;display: flex;align-items: center;justify-content: center;border-radius: 10px;transition: ease-in-out 1s;width: 100px;height: 20px;
+}
+footer {height: 30px;background-color: #8d98a7;display: flex;align-items: center;justify-content: center;text-transform: capitalize;
+}
+body {max-width: 100dvw;overflow-x: hidden;
+}
+
+/* animação dos card do home (n alterar pois pode dar algum bug, obrigado) */
+@keyframes cardexp {
+  0% {
+    width: 100px;
+    height: 20px;
+  }
+
+  100% {
+    height: 280px;
+    width: 300px;
+    background-color: #dcccbb;
+  }
+}
+
+/* animação dos card do home (n alterar pois pode dar algum bug, obrigado) */
+@keyframes cardexpinv {
+  0% {
+    height: 280px;
+    width: 100%;
+    background-color: #dcccbb;
+  }
+  100% {
+    width: 100px;
+    height: 20px;
+  }
+}
+
+/* aqui temos 3 tipos de blocos de organização dentro da div vc deve colocar a class="(tipo1 ou tipo2 ou tipo 3)" */
+.tipe1 p,.tipe2 p{color: white;
+}
+
+/* tem um textos e uma imagem */
+.tipe1 {display: flex;justify-content: space-around;align-items: center;padding: 10px;gap: 50px;font-size: 20px;font-family: arial;text-align: justify;
+}
+.tipe1 img {min-height: 300px;min-width: 300px;object-fit: cover;object-position: center;
+}
+
+/* tem apenas um texto grande */
+.tipe2 {display: flex;align-items: start;padding: 10px;font-size: 20px;font-family: arial;text-align: justify;flex-direction: column;gap: 10px;
+}
+
+/* tem apenas uma imagem grande */
+.tipe3 {display: flex;align-items: center;justify-content: center;padding: 10px;object-fit: cover;width: 100%;object-position: center;
+}
+
+/* ======================================================================================================
+                                    Qualquer duvida so falar com o css
+========================================================================================================= */

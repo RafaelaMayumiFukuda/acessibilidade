@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="padrao.css" />
+    <title>Home - Acessibilidade</title>
+  </head>
+  <body>
+    <header>
+      <div class="marca">
+        <img src="" alt="logo" />
+        <!-- Não foi decidido uma logo -->
+        <h1>acessibilidade</h1>
+        <!-- tem que decidir o titulo com a sala -->
+      </div>
+      <nav>
+        <button class="home" onclick="window.location.href='index.html'">Home</button>
+        <div class="sep"></div>
+        <div class="holder-drop">
+          <button class="active">Deficiencias</button>
+          <div class="drop-down">
+            <button onclick="window.location.href=''">visual</button>
+            <!--colocar no onclick o diretorio para a pagina -->
+            <button onclick="window.location.href=''">auditiva</button>
+            <!--colocar no onclick o diretorio para a pagina -->
+            <button onclick="window.location.href=''">cognitiva</button>
+            <!--colocar no onclick o diretorio para a pagina -->
+            <button onclick="window.location.href=''">fisica</button>
+            <!--colocar no onclick o diretorio para a pagina -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+      onclick="window.location.href=''"
+        class="card"
+        style="background-image: url('visual.png')"
+      >
+        <!-- Tem que colocar dentro do onclick o diretorio para a pagina "BackEnd" -->
+        <div class="text">
+          <p>Visual</p>
+        </div>
+      </div>
+      <div
+      onclick="window.location.href=''"
+        class="card"
+        style="background-image: url('auditiva.png')"
+      >
+        <!-- Tem que colocar dentro do onclick o diretorio para a pagina "BackEnd" -->
+        <div class="text">
+          <p>Auditiva</p>
+        </div>
+      </div>
+      <div
+      onclick="window.location.href=''"
+        class="card"
+        style="background-image: url('cognitiva.png')"
+      >
+        <!-- Tem que colocar dentro do onclick o diretorio para a pagina "BackEnd" -->
+        <div class="text">
+          <p>Cognitiva</p>
+        </div>
+      </div>
+      <div
+      onclick="window.location.href=''"
+        class="card"
+        style="background-image: url('fisica.png')"
+      >
+        <!-- Tem que colocar dentro do onclick o diretorio para a pagina "BackEnd" -->
+        <div class="text">
+          <p>Física</p>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; etec MCM - todos os direitos reservados</footer>
+    <!-- Não sabemos se vamos usar isso de direitos reservados -->
+  </body>
+</html>
